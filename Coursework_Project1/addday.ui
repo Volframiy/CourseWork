@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddDay</class>
+ <widget class="QDialog" name="AddDay">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>943</width>
+    <height>194</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background : rgb(197, 255, 187);
+color : rgb(0, 0, 0);
+</string>
+  </property>
+  <widget class="QSpinBox" name="Year">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : rgb(255, 255, 255);</string>
+   </property>
+   <property name="minimum">
+    <number>2021</number>
+   </property>
+   <property name="maximum">
+    <number>2048</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="Mounth">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>30</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : rgb(255, 255, 255);</string>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>12</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="Day">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>30</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : rgb(255, 255, 255);</string>
+   </property>
+   <property name="minimum">
+    <number>1</number>
+   </property>
+   <property name="maximum">
+    <number>31</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="Humid">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>30</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : rgb(255, 255, 255);</string>
+   </property>
+   <property name="minimum">
+    <number>20</number>
+   </property>
+   <property name="maximum">
+    <number>99</number>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="Press">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>30</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : rgb(255, 255, 255);</string>
+   </property>
+   <property name="minimum">
+    <number>684</number>
+   </property>
+   <property name="maximum">
+    <number>809</number>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="Temp">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>30</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="minimum">
+    <double>-50.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>45.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.500000000000000</double>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Wind">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>30</y>
+     <width>113</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>70</y>
+     <width>901</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>         Year                          Mounth                         Day                   Temperature,C            Pressure,mm               Humidity,%                WindDirection</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButAdd">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>130</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : rgb(255, 255, 255) ; 
+color : rgb(26, 26, 25);
+border-radius : 15;
+</string>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButClose">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>130</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : rgb(255, 255, 255) ; 
+color : rgb(26, 26, 25);
+border-radius : 15;
+</string>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ErrorLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>631</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

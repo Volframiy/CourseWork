@@ -1,0 +1,11 @@
+release/addday.o
+release/date.o
+release/forecast.o
+release/info.o
+release/main.o
+release/mainwindow.o
+release/weather.o
+release/moc_addday.o
+release/moc_forecast.o
+release/moc_info.o
+release/moc_mainwindow.o

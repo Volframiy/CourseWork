@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Forecast</class>
+ <widget class="QDialog" name="Forecast">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>948</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background : rgb(197, 255, 187)
+</string>
+  </property>
+  <widget class="QTableWidget" name="WeatherTable">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>931</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : rgb(255, 255, 255)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButClose">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>540</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : rgb(255, 255, 255) ; 
+color : rgb(26, 26, 25);
+border-radius : 15;
+</string>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ButForecast">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>540</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background : rgb(255, 255, 255) ; 
+color : rgb(26, 26, 25);
+border-radius : 15;
+</string>
+   </property>
+   <property name="text">
+    <string>Forecast</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ErrorLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>540</y>
+     <width>691</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color : rgb(0, 0, 0)</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
